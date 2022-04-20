@@ -21,7 +21,7 @@ function MapSection() {
         <Marker position={center}/>
     </GoogleMap>
     
-    </div>  
+    </div>   
     )
 }
 

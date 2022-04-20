@@ -64,10 +64,10 @@ function Navbar() {
                         Our Estates</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="/SignUp" className='nav-links-mobile' onClick = {closeMobileMenu}>
+                        <Link to="/contact" className='nav-links-mobile' onClick = {closeMobileMenu}>
                         Sign Up</Link>
                     </li>
-                    <li className='nav-item'>{button && <Button to="/SignUp" buttonStyle='btn--outline' buttonSize='btn--large'>Meet us</Button>}</li>
+                    <li className='nav-item'>{button && <Button to="/contact" buttonStyle='btn--outline' buttonSize='btn--large'>Meet us</Button>}</li>
                 </ul>
                 
             </div>

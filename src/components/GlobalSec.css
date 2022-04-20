@@ -3,7 +3,7 @@
     color:#fff;
     width: 100%;
     height:100%;
-    align-items: left;
+    align-items: center;
     color: #000;
 }
 .first-sec-wrapper{
@@ -12,16 +12,58 @@
     grid-template-rows: 700px;
     padding: 2rem 11.2vw;
 }
+@media (min-width:760.5px) and (max-width:1099px){
+    .left-seg{
+        width:20rem !important;
+        padding:20vh 0vw 0 2.3vw !important;
+    }
+    .right-seg{
+        width:20rem !important;
+    }
+}
+@media screen and (max-width:960px){
+    .first-sec-wrapper{
+        grid-template-rows: 400px;
+        padding: 2rem 0vw 10rem 5vw !important;
+    }
+}
+@media screen and (max-width:830px){
+    .first-sec-wrapper{
+        grid-template-columns:1fr;
+        grid-template-rows: 400px;
+    }
+    .left-seg{
+        width:100% !important;
+        padding:10vh 0 0 0vw !important;
+    }
+    .first-no-div{
+        width:55vw !important;
+        height: 35vh !important;
+        font-size:14px;
+    }
+    .second-no-div{
+        width:50vw !important;
+        height:25vh !important;
+        font-size:14px;
+    
+    }
+    .right-seg{
+        padding:5rem 0rem 2rem 6rem !important ;
+    }
+
+} 
 .left-seg, .right-seg{
     display:flex;
     flex-direction: column;
 }
 .left-seg{
-    width:90%;
-    padding:20vh 0 0 2.3vw;
+    width:30rem;
+    max-width:90%;
+    padding:20vh 2.3vw 0 2.3vw;
 }
 .right-seg{
-    padding:0 0.8rem 0 2rem ;
+    padding:0 0rem 0 2rem ;
+    width:30rem;
 }
 .left-seg h1{
     padding: 2rem 0rem;
@@ -36,8 +78,8 @@
 }
 
 .first-no-div{
-    width:500px;
-    height: 100rem;
+    width:26.5vw;
+    height: 45vh;
     background-color:dimgrey;
     margin: 0rem 0rem 0rem 5rem;
     border-radius: 1rem;
@@ -45,9 +87,9 @@
     text-align: center;
 }
 .second-no-div{
-    margin-top:-30%;
-    width:400px;
-    height:80rem;
+    margin-top:-25%;
+    width:25vw;
+    height:35vh;
     background-color:dimgrey;
     border-radius: 1rem;
     color:#000;
@@ -55,5 +97,5 @@
 
 }
 .first-no-div h1, .second-no-div h1{
-    padding: 46% 0 0 0;
+    padding: 15% 0 0 0;
 }

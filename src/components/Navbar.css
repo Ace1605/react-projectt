@@ -31,7 +31,11 @@
     align-items: center;
     height: 80px;
   }
-  
+  @media (min-width:765px) and (max-width:980px){
+    .navbar-container{
+      grid-template-columns: 1fr 2.2fr;
+    }
+  }
   .navbar-logo {
     color: #fff;
     justify-self: start;
