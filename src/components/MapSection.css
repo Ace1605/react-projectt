@@ -1,0 +1,9 @@
+.map-div{
+    height:100vh;
+    position:relative;
+    color:#fff;
+    width: 100%;
+    display:flex;
+    overflow:initial;
+    z-index:nodal;
+}

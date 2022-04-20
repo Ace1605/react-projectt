@@ -1,0 +1,205 @@
+.navbar {
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width:100vw;
+  }
+  .navbar.active{
+    background: rgb(87, 192, 189);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width:100vw;
+  }
+  
+  .navbar-container {
+    padding: 3rem calc((100vw-1300px) /2);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 0rem 0.5rem;
+  }
+  .fa-spa{
+    padding: 5px 0px 0px 5px; 
+    font-size: 22px;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+    
+  }
+  
+  .nav-links-mobile {
+    display: none;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  
+  .menu-icon {
+    display:none;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .NavbarItems {
+      position: relative;
+    }
+
+    .nav-menu {
+      display:flex;
+      flex-direction:column;
+      width: 100%;
+      height: 80vh;
+      position: absolute;
+      top:0px;
+      left:-100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding-bottom: 20%;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left:0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      margin:auto;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      z-index:3;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+
+  @media (max-width:760px){
+    .navbar-logo-center{
+    left:42%;
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    }
+  }

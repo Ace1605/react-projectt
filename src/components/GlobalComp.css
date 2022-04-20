@@ -1,0 +1,13 @@
+.global-container{
+    position:relative;
+    color:#fff;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+}
+.g-container-wrapper{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+}
